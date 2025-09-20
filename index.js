@@ -16,7 +16,8 @@ const app = express(); // ✅ create express app
 app.use(bodyParser.json());
 app.use(
   cors({
-    origin: "http://localhost:5173", // ✅ frontend origin
+    origin: "https://frolicking-praline-909cf3.netlify.app", // ✅ frontend origin
+    // origin: "http://localhost:5173", // ✅ frontend origin
     credentials: true,               // ✅ allow cookies/headers
   })
 );
